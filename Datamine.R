@@ -1,6 +1,5 @@
-############################### CloudCherry_Data_Mining_Assignment ##################
+###############################Data_Mining_Assignment ##################
 ############################### Thomas Varghese ##################
-#As specified, the data is taken from cloudcherry sdk over a period of 3 months(jun 2018 - august 2018)
 
 
 #Initial data gathering
@@ -10,8 +9,6 @@ install.packages('httr')
 library(httr)
 install.packages('jsonlite')
 library(jsonlite)
-install_github('getcloudcherry/cloudcherry-r-sdk')
-library(cloudcherry)
 #Structured data
 data3<-GetAnswers("rohan123test","Rohan@123",c("5b76ae91c474540e2c6b1f6c", "5b99595c760d68155cf7594b","5b995952760d68155cf75874","5b995945760d68155cf7579f","5b99593b760d68155cf756ca","5b99592f760d68155cf755f7"), "2018-06-01", "2018-08-31", 2000, TRUE)
 #Unstructured data
